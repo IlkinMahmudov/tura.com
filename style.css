@@ -1,0 +1,312 @@
+/* =========================
+   RESET & GLOBAL
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #0f172a;
+    line-height: 1.5;
+}
+
+/* =========================
+   HERO – BRAND
+========================= */
+.hero-brand {
+    min-height: 100vh;
+    position: relative;
+    background: url("image-2.jpeg") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-brand .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(2px);
+}
+
+.hero-brand .content {
+    position: relative;
+    text-align: center;
+}
+
+.hero-brand h1 {
+    font-size: clamp(56px, 10vw, 96px);
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.hero-brand p {
+    font-size: clamp(16px, 2.5vw, 22px);
+    opacity: 0.9;
+}
+
+/* =========================
+   HERO – DARK
+========================= */
+.hero {
+    min-height: 100vh;
+    position: relative;
+    background: url("image-1.jpeg") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.35)
+    );
+}
+
+.hero .content {
+    position: relative;
+    max-width: 700px;
+    padding-left: clamp(24px, 6vw, 80px);
+    color: #ffffff;
+}
+
+.hero h2 {
+    font-size: clamp(36px, 6vw, 64px);
+    margin-bottom: 24px;
+}
+
+.hero p {
+    font-size: clamp(16px, 2.5vw, 20px);
+    max-width: 520px;
+}
+
+/* =========================
+   FULL IMAGE SECTIONS
+========================= */
+.full-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-3 { background-image: url("image-3.png"); }
+.image-5 { background-image: url("image-5.jpeg"); }
+.image-6 { background-image: url("image-6.jpeg"); }
+.image-7 { background-image: url("image-7.jpeg"); }
+.image-8 { background-image: url("image-8.jpeg"); }
+.image-9 { background-image: url("image-9.jpeg"); }
+.image-10 { background-image: url("image-10.jpeg"); }
+.image-12 { background-image: url("image-12.jpeg"); }
+
+/* =========================
+   PRODUCT SECTION
+========================= */
+.product-section {
+    background: #eef3ef;
+    padding: clamp(40px, 6vw, 120px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(40px, 8vw, 100px);
+}
+
+.product-image {
+    width: 55%;
+    aspect-ratio: 3 / 4;
+    background: url("image-4.jpeg") center / contain no-repeat;
+}
+
+.product-text {
+    width: 45%;
+}
+
+.product-text h2 {
+    font-size: clamp(32px, 5vw, 52px);
+    margin-bottom: 24px;
+}
+
+.product-text span {
+    color: #1aa06d;
+}
+
+.product-text p {
+    font-size: clamp(16px, 2.8vw, 25px);
+    color: #4b5b58;
+}
+
+/* =========================
+   TEAM SECTION
+========================= */
+.team-section {
+    padding: 80px 20px;
+}
+
+.team-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.team-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.team-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 14px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #e5e7eb;
+    flex-shrink: 0;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info strong {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.info p {
+    font-size: 20px;
+    color: #4b5563;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+.contact-section {
+    min-height: 100vh;
+    padding: clamp(40px, 6vw, 100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    background: radial-gradient(circle at left, #f2f7f4, #ffffff);
+}
+
+.contact-left {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-left h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1f9d63;
+}
+
+.contact-left p {
+    font-size: 24px;
+    color: #1f2933;
+}
+
+.contact-info strong {
+    font-size: 22px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.info-item {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.icon {
+    color: #1f9d63;
+    margin-right: 6px;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-placeholder {
+    width: 260px;
+    height: 260px;
+    border-radius: 12px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.qr-text {
+    margin-top: 16px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+    .product-section,
+    .contact-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-image,
+    .product-text,
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+
+    .contact-left {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .avatar {
+        width: 64px;
+        height: 64px;
+    }
+
+    .info strong {
+        font-size: 18px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+}
