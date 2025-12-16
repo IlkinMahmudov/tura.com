@@ -18,12 +18,12 @@ body {
    HERO – BRAND
 ========================= */
 .hero-brand {
-    min-height: 100vh;
     position: relative;
     background: url("image-2.jpeg") center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: clamp(160px, 30vw, 280px) 20px;
 }
 
 .hero-brand .overlay {
@@ -53,11 +53,11 @@ body {
    HERO – DARK
 ========================= */
 .hero {
-    min-height: 100vh;
     position: relative;
     background: url("image-1.jpeg") center / cover no-repeat;
     display: flex;
     align-items: center;
+    padding: clamp(140px, 25vw, 260px) 0;
 }
 
 .hero .overlay {
@@ -74,6 +74,7 @@ body {
     position: relative;
     max-width: 700px;
     padding-left: clamp(24px, 6vw, 80px);
+    padding-right: 24px;
     color: #ffffff;
 }
 
@@ -98,12 +99,12 @@ body {
     background-repeat: no-repeat;
 }
 
-.image-3 { background-image: url("image-3.png"); }
-.image-5 { background-image: url("image-5.jpeg"); }
-.image-6 { background-image: url("image-6.jpeg"); }
-.image-7 { background-image: url("image-7.jpeg"); }
-.image-8 { background-image: url("image-8.jpeg"); }
-.image-9 { background-image: url("image-9.jpeg"); }
+.image-3  { background-image: url("image-3.png"); }
+.image-5  { background-image: url("image-5.jpeg"); }
+.image-6  { background-image: url("image-6.jpeg"); }
+.image-7  { background-image: url("image-7.jpeg"); }
+.image-8  { background-image: url("image-8.jpeg"); }
+.image-9  { background-image: url("image-9.jpeg"); }
 .image-10 { background-image: url("image-10.jpeg"); }
 .image-12 { background-image: url("image-12.jpeg"); }
 
@@ -112,7 +113,7 @@ body {
 ========================= */
 .product-section {
     background: #eef3ef;
-    padding: clamp(40px, 6vw, 120px);
+    padding: clamp(60px, 10vw, 140px) 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -147,12 +148,12 @@ body {
    TEAM SECTION
 ========================= */
 .team-section {
-    padding: 80px 20px;
+    padding: clamp(60px, 10vw, 120px) 20px;
 }
 
 .team-title {
     text-align: center;
-    font-size: 32px;
+    font-size: clamp(26px, 5vw, 32px);
     margin-bottom: 40px;
 }
 
@@ -203,12 +204,11 @@ body {
    CONTACT SECTION
 ========================= */
 .contact-section {
-    min-height: 100vh;
-    padding: clamp(40px, 6vw, 100px);
+    padding: clamp(80px, 15vw, 160px) 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 80px;
+    gap: clamp(40px, 10vw, 80px);
     background: radial-gradient(circle at left, #f2f7f4, #ffffff);
 }
 
@@ -220,13 +220,13 @@ body {
 }
 
 .contact-left h1 {
-    font-size: 48px;
+    font-size: clamp(32px, 6vw, 48px);
     font-weight: 800;
     color: #1f9d63;
 }
 
 .contact-left p {
-    font-size: 24px;
+    font-size: clamp(18px, 3vw, 24px);
     color: #1f2933;
 }
 
